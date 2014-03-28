@@ -7,6 +7,7 @@ follows:
 ```sh
 cd $HOME
 sudo apt-get install -y git-core
+git config --global user.email "daniel.siegle@gmail.com"
 git clone https://github.com/5x5x5x5/setup.git
 ./setup/setup.sh   
 ```
