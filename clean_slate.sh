@@ -19,3 +19,11 @@ apt install python clang make strace tinyscheme nodejs golang
 
 # silly?
 apt install lynx
+
+# setup syncthing
+export GOPATH=$HOME/.go
+PATH=$GOPATH/bin:${PATH}
+
+go get github.com/syncthing/syncthing/cmd/...
+cd ~/.go/src/syncthing/syncthing
+go run  build.go
